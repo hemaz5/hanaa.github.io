@@ -1,4 +1,4 @@
-# love in girl her name is honhon 
+ <!--In love with girl her name is honhon--> 
 
 <html lang="ar">
 <head>
@@ -166,6 +166,28 @@ function createHeart(){
 
 setInterval(createHeart,300);
 </script>
+<iframe id="musicFrame"
+width="0" height="0"
+src="https://www.youtube.com/embed/HVgy8Ge0GJQ?start=44&autoplay=1&enablejsapi=1&playlist=HVgy8Ge0GJQ"
+frameborder="0"
+allow="autoplay">
+</iframe>
 
+<script>
+let stopTime = 89; // 1:29 = 89 ثانية
+
+let check = setInterval(() => {
+  let iframe = document.getElementById("musicFrame");
+  let player = iframe.contentWindow;
+
+  // نحاول نوقف عند الوقت (تقريبية لأن يوتيوب محدود)
+  let currentTime = new Date().getSeconds();
+
+  if (currentTime >= stopTime) {
+    iframe.remove();
+    clearInterval(check);
+  }
+}, 1000);
+</script>
 </body>
 </html>
