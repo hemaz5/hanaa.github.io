@@ -120,7 +120,7 @@ img{
   <div class="card">
     <h2>📸 أول صورة لينا</h2>
     <p>أجمل بداية لحكايتنا ❤️</p>
-    <img src="20250329j.jpg">
+    <img src="20250329.jpg">
   </div>
 </div>
 
